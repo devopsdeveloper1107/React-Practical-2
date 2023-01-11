@@ -21,7 +21,9 @@ function Userdata()
                 <div className="row">
                     <div className="col-md-12">
                     <h5 className="mt-2">User Data</h5>
-                    
+                    <div className="d-grid d-md-flex justify-content-md-end mb-3">
+                        <Link to="/adduser" className="btn btn-warning">Add New User</Link>
+                       </div>
                         <table className="table table-bordered table-stripe">
                         <thead>
                         <tr>
