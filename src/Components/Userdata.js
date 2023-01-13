@@ -1,11 +1,9 @@
 import React,{ useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-
 function Userdata()
 {
-    const [userData, setUserdata]= useState([]);
- 
+    const [userData, setUserdata]= useState([]); 
     useEffect( ()=>{
         const getUserdata= async()=>{
             const reqData= await fetch("http://localhost:5000/api/user");
@@ -25,7 +23,6 @@ function Userdata()
                        <div className="d-grid d-md-flex justify-content-md-end mb-3">
                         <Link to="/adduser" className="btn btn-warning">Add New User</Link>
                        </div>
-
                        <table className="table table-bordered table-striped">
                         <thead>
                         <tr>
@@ -53,11 +50,9 @@ function Userdata()
                         </td>
                         </tr>
                         )) 
-                           }
-                        
+                        }                        
                         </tbody>
-                        </table>
-                            
+                        </table>                            
                     </div>
                 </div>
             </div>
